@@ -47,9 +47,7 @@ const AppTitle = styled.h1`
   ${({ showResult }) =>
     showResult &&
     `
-    opacity: 0;
-    visibility: hidden;
-    top: 10%;
+    top:0%;
   `}
 `;
 
@@ -160,7 +158,7 @@ class App extends React.Component {
       <>
         {/* <AppTitle showLabel={(weatherInfo || error) && true}>Sohail's Weather App</AppTitle> */}
         <WeatherWrapper>
-          <AppTitle secondary showResult={(weatherInfo && error) && true}>
+          <AppTitle secondary showResult={(error || weatherInfo) && true}>
             WEATHER
           </AppTitle>
           <SearchCity

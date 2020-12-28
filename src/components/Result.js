@@ -22,7 +22,8 @@ import Text from './Text';
 
 const Results = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  height: 90%;
   justify-content: space-between;
   padding: 40px 0;
   opacity: 0;
@@ -100,7 +101,7 @@ const WeatherDetailsWrapper = styled.div`
   margin: 20px 0;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  align-self: flex-start;
+  align-self: center;
 
   // Background Blur using backdrop-filter
   .blur {
@@ -124,7 +125,6 @@ const WeatherDetail = styled.div`
 `;
 
 const ForecastWrapper = styled.div`
-  flex-basis: 100%;
   margin: 20px 0;
   overflow: hidden;
 `;
@@ -191,8 +191,7 @@ const Result = ({ weather }) => {
 
   return (
     <Results>
-      <div style={{display:"flex", justifyContent:"space-between", width:"100%", alignItems:"center"
-    }}>
+      <div style={{display:"flex", justifyContent:"space-between", width:"100%", alignItems:"center", flex: 1}}>
       <LocationWrapper>
         <BigLabel>
           {city}, {country}
