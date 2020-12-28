@@ -2,8 +2,8 @@
 
 https://rawfour.github.io/weather-app-react/
 
-![](screenshots/result.png)
 ![](screenshots/search.png)
+![](screenshots/result.png)
 
 ## Table of contents
 * [Instructions](#Instructions)
