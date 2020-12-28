@@ -2,6 +2,9 @@
 
 https://rawfour.github.io/weather-app-react/
 
+![](screenshots/result.png)
+![](screenshots/search.png)
+
 ## Table of contents
 * [Instructions](#Instructions)
 * [Description](#Description)
@@ -32,4 +35,5 @@ This is a simple react weather app using OpenWeatherMap API.
 Project uses:
 * React
 * Styled Component
+* OpenWeatherAPI for fectching weather data
 
